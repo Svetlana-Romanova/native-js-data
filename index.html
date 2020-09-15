@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Построение таблицы на основе полученных данных</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="customsList">
+    <div class="customsList__data">
+        <button class="customsList__btn customsList__btn--small">Маленький набор</button>
+        <button class="customsList__btn customsList__btn--big">Большой набор</button>
+    </div>
+
+    <div class="customsList__load">
+        <hr/><hr/><hr/><hr/>
+      </div>
+
+      <div class="customsList__add">
+        <button class="customsList__btn customsList__btn--add">Добавить</button>
+      </div>
+
+    <table class="table table-hidden">
+        <thead>
+            <tr>
+                <th>id
+                    <button class="table__arrow">
+                        &#9660;
+                        <!-- &#9650; -->
+                    </button>
+                </th>
+                <th>firstName
+                    <button class="table__arrow">
+                        &#9660;
+                    </button>
+                </th>
+                <th>lastName
+                    <button class="table__arrow">
+                        &#9660;
+                    </button>
+                </th>
+                <th>email
+                    <button class="table__arrow">
+                        &#9660;
+                    </button>
+                </th>
+                <th>phone
+                    <button class="table__arrow">
+                        &#9660;
+                    </button>
+                </th>
+            </tr>    
+        </thead>
+        <tbody class="table__tbody">
+        </tbody>
+    </table>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
