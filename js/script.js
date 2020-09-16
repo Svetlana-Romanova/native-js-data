@@ -1,4 +1,4 @@
-import CustomInfo from './data.js';
+import CustomInfo from '/data.js';
 
 let table = document.querySelector('.table');
 let btnAdd = document.querySelector('.customsList__btn--add');
@@ -11,7 +11,7 @@ document.addEventListener('click', function(event) {
         document.querySelector('.customsList__load').style.display = 'block';
         table.classList.remove('table-hidden');
 
-        fetch('http://www.filltext.com/?rows=32&id={number|1000}&firstName={firstName}&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&address={addressObject}&description={lorem|32}')
+        fetch('/json/data1.json')
         .then((response) => {
             document.querySelector('.customsList__load').style.display = 'none';
             return response.json();
@@ -22,7 +22,7 @@ document.addEventListener('click', function(event) {
         document.querySelector('.customsList__load').style.display = 'block';
         table.classList.remove('table-hidden');
 
-        fetch('http://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=3&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&address={addressObject}&description={lorem|32}')
+        fetch('/json/data2.json')
         .then((response) => {
             document.querySelector('.customsList__load').style.display = 'none';
             return response.json();
