@@ -11,7 +11,7 @@ document.addEventListener('click', function(event) {
         document.querySelector('.customsList__load').style.display = 'block';
         table.classList.remove('table-hidden');
 
-        fetch('/json/data1.json')
+        fetch('../json/data1.json')
         .then((response) => {
             document.querySelector('.customsList__load').style.display = 'none';
             return response.json();
@@ -22,7 +22,7 @@ document.addEventListener('click', function(event) {
         document.querySelector('.customsList__load').style.display = 'block';
         table.classList.remove('table-hidden');
 
-        fetch('/json/data2.json')
+        fetch('../json/data2.json')
         .then((response) => {
             document.querySelector('.customsList__load').style.display = 'none';
             return response.json();
