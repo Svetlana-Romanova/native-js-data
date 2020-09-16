@@ -7,7 +7,6 @@ export default class CustomInfo {
         this.email = custom.email;
         this.phone = custom.phone;
         this.elem = this.render();
-
     }
 
     render() {
@@ -22,6 +21,5 @@ export default class CustomInfo {
         `;
         let tableBody = document.querySelector('.table__tbody');
         tableBody.prepend(el);
-
     }
 }  

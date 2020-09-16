@@ -1,4 +1,4 @@
-import CustomInfo from '/data.js';
+import CustomInfo from './data.js';
 
 let table = document.querySelector('.table');
 let btnAdd = document.querySelector('.customsList__btn--add');
